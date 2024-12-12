@@ -88,7 +88,7 @@ if __name__ == '__main__':
     predict_btt = st.button("Make prediction")
     if predict_btt:
         with st.spinner('Analyzing...'):
-            prediction_class = faking_news(sentence)  # Perform prediction logic here
+            prediction_class = faking_news(sentence)  
         print(prediction_class)
         if prediction_class == [0]:
             st.success('This article is RELIABLE. Stay informed!')
@@ -96,7 +96,6 @@ if __name__ == '__main__':
         elif prediction_class == [1]:
             st.error('This article appears UNRELIABLE ⚠️.')
 
-    # Additional details section
     st.markdown(
         """
         <div class='details-box'>
