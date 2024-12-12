@@ -7,10 +7,11 @@ The dataset comes from the Kaggle https://www.kaggle.com/c/fake-news/data?select
 ## Setup Instructions
 ### 1.Clone the repository
 git clone https://github.com/AnnPoberezhna/solvro_cocktails_ml.git
-### 2. Create and activate a virtual environment
+### 2.Create and activate a virtual environment
 Create virtual environment
+```
 python -m venv .venv
-
+```
 Activate the virtual environment
 On Windows:
 .venv\Scripts\activate
@@ -18,6 +19,13 @@ On Windows:
 On macOS/Linux:
 source .venv/bin/activate
 
-Install the required dependencies
+#### Install the required dependencies:
+```
 pip install -r requirements.txt
-
+```
+### 3.Accessing the Website
+To run the website locally, use the following command:
+```
+streamlit run main.py
+```
+This will start the Streamlit server, and you can access the website in your browser.
