@@ -80,20 +80,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# if __name__ == '__main__':
-#     st.markdown("<div class='main-header'>Fake News Detection Application</div>", unsafe_allow_html=True)
-#     st.markdown("<div class='sub-header'>Paste the content of a news article below:</div>", unsafe_allow_html=True)
-#
-#     sentence = st.text_area("Enter your news content here", "", height=200)
-#     predict_btt = st.button("Make prediction")
-#     if predict_btt:
-#         prediction_class = faking_news(sentence)
-#         print(prediction_class)
-#         if prediction_class == [0]:
-#             st.success('Reliable')
-#         if prediction_class == [1]:
-#             st.warning('Unreliable')
-
 if __name__ == '__main__':
     st.markdown("<div class='main-header'>Fake News Detection Application</div>", unsafe_allow_html=True)
     st.markdown("<div class='sub-header'>Paste the content of a news article below:</div>", unsafe_allow_html=True)
